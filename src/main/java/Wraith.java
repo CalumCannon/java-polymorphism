@@ -1,10 +1,10 @@
-public class ScorpionTank extends Unit implements IVehicle{
-    public ScorpionTank() {
-        super("ScorpionTank", 30, Team.UNSC);
+public class Wraith extends Unit implements IVehicle {
+    public Wraith() {
+        super("Wraith", 120, Team.Covenant);
     }
 
     public String drive() {
-        return "*tank noises*";
+        return "*alien tank noises*";
     }
 
     public String transport(Unit unit) {
@@ -13,6 +13,6 @@ public class ScorpionTank extends Unit implements IVehicle{
 
     //Overloading
     public int attack(){
-        return 10;
+        return 15;
     }
 }

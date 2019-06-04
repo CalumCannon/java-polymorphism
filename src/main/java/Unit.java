@@ -14,7 +14,23 @@ public abstract class Unit {
         return 1;
     }
 
+    public void attack(IVehicle vehicle) {
+        ((Unit)vehicle).damage(10);
+    }
+
+    public void damage(int damage){
+        this.health -= damage;
+    }
+
     public String getName(){
         return this.name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public Team getTeam(){
+        return team;
     }
 }

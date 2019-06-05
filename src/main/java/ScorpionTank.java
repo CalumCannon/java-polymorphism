@@ -1,6 +1,6 @@
 public class ScorpionTank extends Unit implements IVehicle{
     public ScorpionTank() {
-        super("ScorpionTank", 30, Team.UNSC);
+        super("Scorpion Tank", 30, Team.UNSC);
     }
 
     public String drive() {
@@ -8,7 +8,7 @@ public class ScorpionTank extends Unit implements IVehicle{
     }
 
     public String transport(Unit unit) {
-        return "I am a " + super.getName() + " and I amtransporting: " + unit.getName();
+        return "I am a " + super.getName() + " and I am transporting a " + unit.getName();
     }
 
     //Overloading

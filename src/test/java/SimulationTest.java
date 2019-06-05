@@ -72,5 +72,17 @@ public class SimulationTest {
         assertEquals(110,alienTank.getHealth());
     }
 
+    @Test
+    public void testTransportUnit(){
+       assertEquals("I am a Scorpion Tank and I am transporting a Marine", tank.transport(marine));
+    }
+
+    @Test
+    public void testVehicleSounds()
+    {
+        assertEquals("*tank noises*", tank.drive());
+    }
+
+
 
 }
